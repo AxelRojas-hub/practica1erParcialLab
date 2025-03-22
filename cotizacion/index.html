@@ -5,11 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cotizador</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
 </head>
 <body >
-    <section>
-
-    </section>
+    <main>
+        <section class="main-section">
+            <form class="form">
+                <h1 class="main-title">Cotizador</h1>
+                <label class="service-type">
+                        Tipo de servicio
+                        <select name="service" id="service-select">
+                            <option value="peluqueria" class="peluqueria">Peluquería ($300 min.)</option>
+                            <option value="baño">Baño ($250 min.)</option>
+                            <option selected value="acuario">Limpieza de acuario ($125 x m2)</option>
+                            <option value="vacunacion">Vacunación ($205 x Mascota)</option>
+                            <option value="consulta">Consulta médica ($180 x Mascota)</option>
+                        </select>
+                </label>
+                <div class="aquarium-cleaning" >
+                    <label >
+                        Alto del acuario
+                        <input required type="number" name="alto" id="alto" placeholder="50 (centimetros)">
+                    </label>
+                    <label >
+                        Ancho del acuario
+                        <input required type="number" name="ancho" id="ancho" placeholder="90 (centimetros)">
+                    </label>
+                </div>
+                <div class="other-services" style="display: none;">
+                    <label>
+                        ¿Cuántos animales son?
+                        <input type="number" name="cantidad" id="cantidad" placeholder="0">
+                    </label>
+                    <label>
+                        Raza del animal
+                        <input type="text" name="raza" id="raza" placeholder="EJ: Pastor Alemán">
+                    </label>
+                    <label>
+                        Peso aproximado
+                        <input type="number" name="peso" id="peso" placeholder="25 (kgs)">
+                    </label>
+                    <label>
+                        ¿Son agresivos?
+                        <select name="agresivo" id="agresivo">
+                            <option selected value="no">No</option>
+                            <option value="si">Si</option>
+                        </select>
+                    </label>
+                    <label>
+                        ¿Son clientes de la veterinaria?
+                        <select name="cliente" id="cliente">
+                            <option selected value="no">No</option>
+                            <option value="si">Si</option>
+                        </select>
+                    </label>
+                </div>
+                <label class="observations">
+                    Observaciones
+                    <textarea name="observaciones" id="observaciones" cols="30" rows="6" placeholder="Observaciones"></textarea>
+                </label>
+                <button type="submit" class="form-btn">Cotizar</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>

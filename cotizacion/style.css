@@ -1,0 +1,137 @@
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-title {
+    text-align: center;
+    margin: 0 0 5px 0;
+}
+
+.form {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+
+    button {
+        padding: 8px;
+        width: 100%;
+        margin-top: 12px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border: 1px solid #333;
+        border-radius: 8px;
+        background-color: #14a278;
+        color: white;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    button:hover {
+        background-color: #0d775a;
+        transition: all 0.2s ease;
+    }
+}
+
+.service-type {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: start;
+
+    select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #333;
+        border-radius: 8px;
+    }
+}
+
+.other-services {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 12px;
+
+    label {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: start;
+
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #333;
+            border-radius: 8px;
+        }
+
+        input {
+            width: 96%;
+            align-self: flex-start;
+            padding: 8px;
+            border: 1px solid #333;
+            border-radius: 8px;
+        }
+    }
+}
+
+.aquarium-cleaning {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+
+    label {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: start;
+    }
+
+    input {
+        width: 96%;
+        padding: 8px;
+        border: 1px solid #333;
+        border-radius: 8px;
+    }
+}
+
+.observations {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+
+    label {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: start;
+    }
+
+    textarea {
+        width: 96%;
+        padding: 8px;
+        border: 1px solid #333;
+        border-radius: 8px;
+    }
+}
